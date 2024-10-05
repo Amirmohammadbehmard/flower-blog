@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  color:black
+}
+@font-face {
+  font-family: 'lalezare';
+  src: url('assets/fonts/Lalezar-Regular.ttf');
+}
+.itemColor{
+  color:"#3F3D56" !important;
+}
