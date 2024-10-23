@@ -6,10 +6,9 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    console.log("hello mother fucker", window.location.pathname);
     setInterval(() => {
-      console.log("im in the app ha ha ha", window.location.pathname);
-    }, 5000);
+      alert("im in the => ", window.location.pathname);
+    }, 15000);
   }, []);
   let routes = useRoutes(routesItem);
   return routes;
