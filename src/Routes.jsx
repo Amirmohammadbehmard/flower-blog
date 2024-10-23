@@ -9,9 +9,8 @@ import PrivateRoute from "./components/privateRoute/PrivateRoute";
 import AboutMore from "./pages/aboutmore/AboutMore";
 import { Navigate } from "react-router-dom";
 export let routesItem = [
-  { path: "/", element: <Home /> },
-  { path: "/about/*", element: <About />},
-
+  { path: "/flower-blog", element: <Home /> },
+  { path: "/about/*", element: <About /> },
   {
     path: "/article/*",
     element: <Article />,
@@ -31,10 +30,23 @@ export let routesItem = [
     ],
   },
   { path: "/login", element: <Login /> },
-  { path: "/panel", element: <PrivateRoute><Panel /></PrivateRoute> },
+  {
+    path: "/panel",
+    element: (
+      <PrivateRoute>
+        <Panel />
+      </PrivateRoute>
+    ),
+  },
   { path: "/selection/:id", element: <Selection /> },
-  { path: "/setting", element: <PrivateRoute><Setting /></PrivateRoute> },
+  {
+    path: "/setting",
+    element: (
+      <PrivateRoute>
+        <Setting />
+      </PrivateRoute>
+    ),
+  },
   { path: "/aboutmore", element: <AboutMore /> },
-  { path:"*" ,element:<Navigate to="/" />  }
-  
+  { path: "*", element: <Navigate to="/flower-blog" /> },
 ];

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import flowerimg from "../../assets/images/undraw_flowers_vx06.svg";
 import SelectionItem from "../../components/selecion/SelectionItem ";
@@ -43,7 +43,6 @@ function Home() {
             </Col>
           ))}
         </Row>
-        
       </Container>
       <Footer />
     </>
